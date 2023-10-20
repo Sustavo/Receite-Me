@@ -78,7 +78,8 @@ export default function SignUp() {
   return(
       <Container>
           <LoginText>Sign up</LoginText>
-          <Input label="Nome" type="text" placeholder="João" 
+          <Text>‎ ‎ ‎ ‎ ‎ </Text>
+          <Input label="Nome" type="text" placeholder="Insira seu nome" 
               value={formData.nome}
               onChangeText={value => {
                 handleInputChange('nome', value);
@@ -86,7 +87,7 @@ export default function SignUp() {
               }}
               required={true}
           />
-          <Input label="Email" keyboardType="email-address" placeholder="joao@gmail.com"
+          <Input label="Email" keyboardType="email-address" placeholder="Insira seu email"
               value={formData.email}
               onChangeText={value => {
                 handleInputChange('email', value);
@@ -94,7 +95,7 @@ export default function SignUp() {
               }}
               required={true}
           />
-          <Input label="Senha" type="password" placeholder="*********"
+          <Input label="Senha" type="password" placeholder="Insira uma senha"
               value={formData.senha}
               onChangeText={value => {
                 handleInputChange('senha', value);
@@ -102,7 +103,7 @@ export default function SignUp() {
               }}
               required={true}
           />
-          <Input label="Confirmar senha" type="password" placeholder="*********"
+          <Input label="Confirmar senha" type="password" placeholder="Confirme sua senha"
               value={formData.confirmarSenha}
               onChangeText={value => {
                 handleInputChange('confirmarSenha', value);
@@ -111,10 +112,10 @@ export default function SignUp() {
               required={true}
           />
           <ContainerButton>
-              <Button labelButton="CADASTRAR" onPress={handleSignUp} width={200} height={47} radius={10} disabled={!isButtonEnabled} />
+              <Button labelButton="CADASTRAR" onPress={handleSignUp} width={290} height={47} radius={10} disabled={!isButtonEnabled} />
               <SubText>Já possui uma conta? <Weight700 
               style={{color: "#22A36D"}} 
-              onPress={() => navigation.navigate('Login')}>Entre agora</Weight700></SubText>
+              onPress={() => navigation.navigate('Login')}>Entrar agora</Weight700></SubText>
           </ContainerButton>
       </Container>
   )

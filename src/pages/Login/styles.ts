@@ -13,6 +13,12 @@ export const LoginText = styled.Text`
     color: #272727;
 `
 
+export const SubText = styled.Text`
+    font-family: 'Poppins-Medium';
+    font-size: 12px;
+    color: #686868;
+`
+
 export const ContainerButton = styled.View`
     align-items: center;
     gap: 30px;
@@ -24,7 +30,7 @@ export const BackThePage = styled.View`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 45px;
     width: 100%;
     margin: 0 0 50px 0 ;
 `;
@@ -35,7 +41,7 @@ export const BackArrow = styled.Image`
 `
 
 export const EsqueciSenha = styled.Text`
+    font-family: 'Poppins-SemiBold';
     font-size: 12px;
-    font-weight: 600;
     color: #22A36D;
 `
